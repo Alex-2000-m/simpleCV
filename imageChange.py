@@ -8,7 +8,7 @@ img = cv2.imread("test.jpg")#这里是原始图片！！！
 print(img.shape)
 cropped = img[0:200, 0:200] # 裁剪坐标为[y0:y1, x0:x1]
 cv2.imwrite('testx.jpg', cropped)
-img = Image.open('testx.jpg')#这个是裁剪完的原始图片，还没做其他处理
+img = Image.open('test.jpg')#这个是裁剪完的原始图片，还没做其他处理
  
 # 模式L”为灰色图像，它的每个像素用8个bit表示，0表示黑，255表示白，其他数字表示不同的灰度。
 Img = img.convert('L')
